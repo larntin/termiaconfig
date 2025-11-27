@@ -1,0 +1,10 @@
+items:
+  - id: 83fdc192-40a4-4fc1-bf9e-f36d710babcf
+    name: hn
+    description: hd
+    created_at: 1763706209401
+    updated_at: 1764223196577
+    ip: 10.10.31.187
+    user: root
+    password: fxkc2025
+    port: 22

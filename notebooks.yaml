@@ -1,0 +1,232 @@
+items:
+  - id: 7890c07a-91b8-43d2-b180-d7fdfa5e5477
+    name: Docker 端口映射注意事项
+    description: 关于 Docker 容器端口映射（-p / --publish、EXPOSE、docker-compose ports 等）的关键注意事项、最佳实践、示例与常见故障排查方法。
+    created_at: 1763705659377
+    updated_at: 1764142922000
+    content: |-
+      # Docker 端口映射的注意事项
+
+      下面汇总常见的概念、注意点、最佳实践、示例命令和排错步骤，帮助你正确、安全、高效地使用 Docker 端口映射。
+
+      ## 1. 基本概念
+
+      - EXPOSE：Dockerfile 中的 EXPOSE 只是声明容器希望监听的端口，不会自动做端口映射。
+      - -p / --publish：docker run -p 主机端口:容器端口 来将主机端口映射到容器端口；也支持指定协议（/tcp 或 /udp）。
+      - -P（大写）：随机映射容器的 EXPOSE 端口到主机的高位端口。
+      - Host 绑定接口：可以使用 -p 主机IP:主机端口:容器端口 指定绑定的主机网络接口（例如 127.0.0.1:8080:80），缺省会绑定到 0.0.0.0。
+      - --network host：容器直接共享宿主机网络命名空间，不做端口映射（Linux 下可用），适用于需要最低网络开销或访问特殊网络接口的场景。
+
+      ## 2. 常见注意事项与风险
+
+      - 端口冲突：同一宿主机上不能有两个容器或进程绑定相同主机端口（同一 IP + 端口 + 协议）。启动前确认端口是否被占用。
+      - 绑定接口限制访问：将端口绑定到 127.0.0.1 可以限制仅宿主访问，避免外网暴露（常用于开发或保密服务）。
+      - 协议必须匹配：若应用使用 UDP，映射时需指定 /udp，否则会映射为 TCP。
+      - 安全问题：映射到公网可被外部访问。生产环境应通过防火墙、反向代理（如 Nginx）、负载均衡器或 VPN 控制访问，避免直接暴露应用端口。
+      - SELinux / AppArmor：在启用了 SELinux 的系统上，某些绑定或卷挂载可能受限，但端口映射一般不受此直接影响；若使用 --network host 则需额外注意安全策略。
+      - 容器内监听地址：应用需要监听在 0.0.0.0 才能通过端口映射从宿主访问；仅监听 127.0.0.1 会使外部（包括宿主）无法访问容器服务。
+
+      ## 3. 最佳实践
+
+      - 在开发环境用 127.0.0.1:HOST_PORT:CONTAINER_PORT 来避免对外暴露。
+      - 生产环境使用反向代理（Nginx、Traefik）或负载均衡器统一对外暴露端口，容器内部只暴露服务端口并使用私有网络（Docker bridge 或 user-defined network）。
+      - 使用 Docker 自定义网络（docker network create）让容器间通过容器名互相访问，减少对宿主端口的依赖。
+      - 避免使用 --network host 在多租户或对安全有严格要求的环境中。
+      - 明确映射协议（TCP/UDP），并记录端口用途，避免混淆。
+      - 使用防火墙（iptables、ufw、firewalld）限制对宿主端口的访问。
+
+      ## 4. 常用示例
+
+      - 基本映射：
+        docker run -d -p 8080:80 nginx
+        - 将宿主机 8080 端口映射到容器的 80 端口。
+
+      - 指定绑定接口（仅本机可访问）：
+        docker run -d -p 127.0.0.1:8080:80 nginx
+
+      - 指定协议：
+        docker run -d -p 5000:5000/tcp myapp
+        docker run -d -p 12345:12345/udp myudpapp
+
+      - 随机映射 EXPOSE 端口：
+        docker run -d -P myimage
+        docker port <container> 可查看实际映射的主机端口。
+
+      - docker-compose（示例）：
+        version: '3'
+        services:
+          web:
+            image: myweb
+            ports:
+              - "127.0.0.1:8080:80"   # 仅宿主可访问
+              - "443:443"             # 对外暴露 HTTPS
+
+      - 使用 --network host（Linux）：
+        docker run --network host myapp
+        注意：容器和宿主共享网络命名空间，端口冲突直接影响宿主机。
+
+      ## 5. 排查与诊断命令
+
+      - 查看容器端口映射：
+        docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}"
+        或
+        docker port <container-name-or-id>
+
+      - 查看宿主当前监听端口（确认端口是否被占用）：
+        ss -tuln | grep <port>
+        或
+        netstat -tuln | grep <port>
+
+      - 查看容器内监听地址（进入容器）：
+        docker exec -it <container> netstat -tuln
+        确保应用在 0.0.0.0 上监听，而非 127.0.0.1。
+
+      - 查看防火墙规则是否阻止访问（以 ufw 为例）：
+        sudo ufw status
+
+      ## 6. 进阶/边缘场景
+
+      - 多宿主网络接口：若宿主机有多个网卡，通过指定绑定 IP 来限制端口在哪个接口可达。
+      - 映射端口范围：
+        docker run -p 3000-3010:3000-3010 myapp
+        注意：有些 Docker 版本和平台对端口范围支持有限制，检查文档及版本。
+
+      - IPv6：Docker 也支持 IPv6，但需要在 daemon.json 中配置并在 -p 时确保使用 IPv6 地址或通过宿主网络策略管理。
+
+      - 性能：使用 NAT（默认 bridge）会有少量开销；对高吞吐/低延迟场景可考虑 --network host（Linux）或使用 Host 的端口转发优化方案。
+
+      - Swarm / Kubernetes：在集群编排下，端口映射由服务抽象（NodePort、LoadBalancer、Ingress）或 Swarm 的端口发布管理，单主机的 -p 模式在编排环境下通常不是首选。
+
+      ## 7. 常见问题与解决
+
+      - 访问不到容器服务：
+        - 检查容器是否在运行（docker ps）。
+        - 检查端口映射（docker port / docker ps 的 Ports 列）。
+        - 确认容器内服务监听 0.0.0.0 而非 127.0.0.1。
+        - 检查宿主防火墙是否阻止访问。
+        - 若绑定了 127.0.0.1，远程主机无法访问。
+
+      - 映射后端口和预期不符：
+        - 若使用 -P，Docker 会选择随机主机端口；用 -p 明确指定。
+
+      - 端口被占用，容器无法启动：
+        - 使用 ss/netstat 查找占用进程，停止或更换端口。
+
+      ## 8. 快速检查列表（部署前）
+
+      - 应用监听地址是否为 0.0.0.0？
+      - 是否正确使用 -p 主机端口:容器端口？是否指定了协议？
+      - 是否不希望对外暴露，改为绑定 127.0.0.1 或使用私有网络？
+      - 防火墙规则是否允许所需流量？
+      - 宿主端口是否已被占用？
+      - 是否需要反向代理/负载均衡来集中管理 TLS 与域名？
+
+      ---
+
+      如果需要，我可以根据你的具体场景（操作系统、Docker 版本、是否使用 docker-compose/Swarm/Kubernetes、要映射的端口及是否需要对外暴露）给出定制化的配置示例与安全建议。
+  - id: 4c0c0bfe-34d5-4cef-bfb1-f2392dd7a52f
+    name: Docker 端口映射注意事项
+    description: 总结 Docker 端口映射（publish/expose）时常见概念、语法、网络模式与故障排查要点的详细指南。
+    created_at: 1763719772507
+    updated_at: 1764143735138
+    content: |-
+      # Docker 端口映射注意事项
+
+      以下内容以实务角度说明在使用 docker run、docker compose、以及不同网络模式下进行端口映射时需要注意的点、常见错误来源与排查方法，并给出常用示例命令与最佳实践建议。
+
+      ## 基本概念
+
+      - 发布（publish）端口：使用 -p 或 --publish 将宿主机端口映射到容器端口（hostPort:containerPort）。例如 `-p 8080:80`。
+      - 暴露（expose）：在 Dockerfile 中写 `EXPOSE 80` 只是声明端口，不会自动映射到宿主机。
+      - 容器内部端口只对容器或同一网络内的容器可见；要从宿主机或外部访问，必须 publish（或使用 host 网络模式）。
+
+      ## 常用语法与示例
+
+      - 单个端口映射：
+        - docker run -d -p 8080:80 nginx
+        - 将宿主机 8080 端口转发到容器 80 端口。
+      - 指定主机接口：
+        - docker run -d -p 127.0.0.1:8080:80 nginx
+        - 只在本地回环接口监听，外部不可访问。
+      - 映射随机主机端口：
+        - docker run -d -p 80 nginx
+        - Docker 会随机选择宿主机端口并映射到容器 80，可用 docker port 或 docker ps 查看映射结果。
+      - UDP 映射：
+        - docker run -d -p 9000:9000/udp someimage
+      - 端口范围映射：
+        - docker run -d -p 10000-10010:10000-10010 app
+
+      ## 网络模式差异
+
+      - bridge（默认）：容器通过桥接网络（docker0）相连，-p 生效并将端口映射到宿主机。
+      - host：容器直接使用宿主机网络栈，不需要 -p，容器内监听的端口直接在宿主机上可见（注意端口冲突和安全）。
+        - docker run --network host ...
+      - none：无网络，无法访问。
+      - overlay/macvlan/自定义网络：不同场景影响可到达性与是否需要端口映射（例如在 overlay 网络中，容器间可直接通信，不需要 -p；在某些多宿主集群中，端口映射行为更复杂）。
+
+      ## 常见问题与排查方法
+
+      - 端口被占用（Address already in use）：
+        - 错误表现：docker run -p 80:80 报错
+        - 排查：在宿主机上使用 `ss -tlnp` 或 `netstat -tlnp` 查找占用进程；停止冲突服务或改用其他端口。
+      - 只能在宿主机访问而外网不可达：
+        - 原因：使用了 `127.0.0.1:hostPort:containerPort` 或防火墙规则、云安全组未放行端口。
+        - 排查：检查 docker run 的 -p 是否绑定到 0.0.0.0 或特定外网 IP；检查 `iptables` / firewalld / ufw；云平台安全组。
+      - 容器内服务没有监听对应端口：
+        - 即使做了 -p，如果容器内进程没有在指定端口监听，也无法访问。
+        - 排查：进入容器 `docker exec -it <id> ss -tlnp` 或查看应用配置、日志。
+      - SELinux 或 AppArmor 限制：
+        - 在启用 SELinux 的系统，某些绑定或卷挂载可能需要额外策略。
+      - Docker Desktop (Mac/Windows)：
+        - 在 macOS/Windows 上，容器运行在虚拟机中，端口映射仍可用但网络实现不同，某些透明代理或本地路由可能产生额外差异。
+      - IPv6：
+        - 默认仅启用 IPv4，若需要 IPv6 映射需在 daemon.json 启用并注意系统网络配置。
+
+      ## 安全与性能注意点
+
+      - 不要无差别对外暴露后端管理端口（如数据库、管理界面）；若只需本地访问，用 127.0.0.1 绑定或不要映射到公网 IP。
+      - 使用 host 网络模式会绕过网络隔离，谨慎使用在多租户或安全敏感场景。
+      - 大量端口映射或大量短连接可能影响宿主机的网络性能，需监控连接数与系统耗用。
+
+      ## docker-compose 与端口映射
+
+      示例：
+
+      version: '3.8'
+      services:
+        web:
+          image: nginx
+          ports:
+            - "8080:80"   # "host:container"
+            - "127.0.0.1:8443:443"  # 仅本地访问
+
+      提示：ports 列表中的格式与 docker run -p 等价。同时可使用 networks 配合服务间通信，避免不必要的对外映射。
+
+      ## 生产环境最佳实践
+
+      - 最小暴露原则：只映射外部必需的端口。
+      - 使用反向代理（如 nginx/Traefik）集中管理外部入口，减少容器直接暴露端口，并提供 TLS、路由与限流能力。
+      - 在多宿主或集群场景（Kubernetes/Swarm）中，优先使用平台提供的服务暴露方式（Service/Ingress）而不是手工在每个节点上暴露端口。
+      - 使用监控告警（如端口连通性、失败率）及自动化部署流程，避免人为配置错误。
+
+      ## 常用排查命令速查
+
+      - 查看容器端口映射：
+        - docker ps
+        - docker port <container>
+      - 宿主机端口占用：
+        - ss -tlnp | grep <port>
+      - 容器内部查看监听：
+        - docker exec -it <container> ss -tlnp
+      - 查看防火墙规则：
+        - sudo iptables -L -n -v
+        - sudo firewall-cmd --list-all (CentOS/RedHat)
+
+      ## 小结（快速要点）
+
+      - -p 是把宿主端口映射到容器端口，EXPOSE 只是声明。
+      - 指定 IP（如 127.0.0.1）会限制监听接口，0.0.0.0 表示所有接口。
+      - 不同网络模式（bridge、host、overlay）决定是否需要或能否映射端口。
+      - 排查顺序：检查容器内服务是否监听 -> 查看容器端口映射 -> 检查宿主机端口占用 -> 检查防火墙/安全组/SELinux -> 检查网络模式与平台差异。
+
+      如果你有具体的 docker run/compose 配置、错误日志或想实现的网络访问场景（例如仅内网访问、跨宿主访问或负载均衡），提供这些信息我可以给出针对性的诊断与修复命令。

@@ -1,0 +1,1342 @@
+items:
+  - id: 5a7f2ed8-52eb-4247-ba28-afc1feeef0a7
+    name: Imported Env Vars
+    created_at: 1763706179755
+    updated_at: 1763706179755
+    envVars:
+      - k: ALLUSERSPROFILE
+        v: C:\ProgramData
+        description: ""
+      - k: ANTIGRAVITY_CLI_ALIAS
+        v: agy
+        description: ""
+      - k: APPDATA
+        v: C:\Users\dengd\AppData\Roaming
+        description: ""
+      - k: BERRY_BIN_FOLDER
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-81965b4f
+        description: ""
+      - k: CHROME_CRASHPAD_PIPE_NAME
+        v: \\.\pipe\crashpad_16088_ISVSZRXIHFSPOMFE
+        description: ""
+      - k: CLASSPATH
+        v: .;C:\Program Files\jdk-17.0.17\lib\dt.jar;C:\Program Files\jdk-17.0.17\lib\tools.jar
+        description: ""
+      - k: COLORTERM
+        v: truecolor
+        description: ""
+      - k: COMMONPROGRAMFILES
+        v: C:\Program Files\Common Files
+        description: ""
+      - k: COMMONPROGRAMFILES(X86)
+        v: C:\Program Files (x86)\Common Files
+        description: ""
+      - k: COMMONPROGRAMW6432
+        v: C:\Program Files\Common Files
+        description: ""
+      - k: COMPUTERNAME
+        v: PC-OMEN-11
+        description: ""
+      - k: COMSPEC
+        v: C:\windows\system32\cmd.exe
+        description: ""
+      - k: CONDA_DEFAULT_ENV
+        v: base
+        description: ""
+      - k: CONDA_EXE
+        v: C:\Users\dengd\miniconda3\Scripts\conda.exe
+        description: ""
+      - k: CONDA_PREFIX
+        v: C:\Users\dengd\miniconda3
+        description: ""
+      - k: CONDA_PROMPT_MODIFIER
+        v: (base)
+        description: ""
+      - k: CONDA_PYTHON_EXE
+        v: C:\Users\dengd\miniconda3\python.exe
+        description: ""
+      - k: CONDA_SHLVL
+        v: "1"
+        description: ""
+      - k: COREPACK_ENABLE_DOWNLOAD_PROMPT
+        v: "1"
+        description: ""
+      - k: COREPACK_ROOT
+        v: C:\Users\dengd\AppData\Local\nvm\v24.11.0\node_modules\corepack
+        description: ""
+      - k: DRIVERDATA
+        v: C:\Windows\System32\Drivers\DriverData
+        description: ""
+      - k: EFC_29184_1262719628
+        v: "1"
+        description: ""
+      - k: EFC_29184_1592913036
+        v: "1"
+        description: ""
+      - k: EFC_29184_2283032206
+        v: "1"
+        description: ""
+      - k: EFC_29184_2775293581
+        v: "1"
+        description: ""
+      - k: EFC_29184_3789132940
+        v: "1"
+        description: ""
+      - k: ELECTRON_CLI_ARGS
+        v: '[]'
+        description: ""
+      - k: ELECTRON_EXEC_PATH
+        v: C:\Users\dengd\workspace\sourcecode\termia\node_modules\electron\dist\electron.exe
+        description: ""
+      - k: ELECTRON_MAJOR_VER
+        v: "37"
+        description: ""
+      - k: ELECTRON_RENDERER_URL
+        v: http://localhost:5173
+        description: ""
+      - k: GIT_ASKPASS
+        v: c:\Users\dengd\AppData\Local\Programs\Antigravity\resources\app\extensions\git\dist\askpass.sh
+        description: ""
+      - k: GOPATH
+        v: C:\Users\dengd\go
+        description: ""
+      - k: HOMEDRIVE
+        v: 'C:'
+        description: ""
+      - k: HOMEPATH
+        v: \Users\dengd
+        description: ""
+      - k: INIT_CWD
+        v: C:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: JAVA_HOME
+        v: C:\Program Files\jdk-17.0.17
+        description: ""
+      - k: LANG
+        v: en_US.UTF-8
+        description: ""
+      - k: LOCALAPPDATA
+        v: C:\Users\dengd\AppData\Local
+        description: ""
+      - k: LOGONSERVER
+        v: \\PC-OMEN-11
+        description: ""
+      - k: MAVEN_HOME
+        v: C:\Users\dengd\workspace\tools\apache-maven-3.9.11
+        description: ""
+      - k: NODE_ENV
+        v: development
+        description: ""
+      - k: NODE_ENV_ELECTRON_VITE
+        v: development
+        description: ""
+      - k: npm_config_user_agent
+        v: yarn/4.6.0 npm/? node/v24.11.0 win32 x64
+        description: ""
+      - k: npm_execpath
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-81965b4f\yarn
+        description: ""
+      - k: npm_lifecycle_event
+        v: dev
+        description: ""
+      - k: npm_node_execpath
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-81965b4f\node
+        description: ""
+      - k: npm_package_json
+        v: C:\Users\dengd\workspace\sourcecode\termia\package.json
+        description: ""
+      - k: npm_package_name
+        v: waveterm
+        description: ""
+      - k: npm_package_version
+        v: 0.11.6-beta.1
+        description: ""
+      - k: NUMBER_OF_PROCESSORS
+        v: "20"
+        description: ""
+      - k: NVM_HOME
+        v: C:\Users\dengd\AppData\Local\nvm
+        description: ""
+      - k: NVM_SYMLINK
+        v: C:\nvm4w\nodejs
+        description: ""
+      - k: ONEDRIVE
+        v: C:\Users\dengd\OneDrive
+        description: ""
+      - k: ONLINESERVICES
+        v: Online Services
+        description: ""
+      - k: ORIGINAL_XDG_CURRENT_DESKTOP
+        v: undefined
+        description: ""
+      - k: OS
+        v: Windows_NT
+        description: ""
+      - k: PATH
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-81965b4f;C:\Users\dengd\miniconda3;C:\Users\dengd\miniconda3\Library\mingw-w64\bin;C:\Users\dengd\miniconda3\Library\usr\bin;C:\Users\dengd\miniconda3\Library\bin;C:\Users\dengd\miniconda3\Scripts;C:\Users\dengd\miniconda3\bin;C:\Users\dengd\miniconda3\condabin;.;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\Users\dengd\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Program Files\Go\bin;C:\Program Files\Git\cmd;C:\Users\dengd\workspace\tools\zig-x86_64-windows-0.16.0-dev.1225+bf9082518;C:\Program Files\dotnet;C:\Program Files\cursor\resources\app\bin;C:\Users\dengd\miniconda3;C:\Users\dengd\miniconda3\Library\mingw-w64\bin;C:\Users\dengd\miniconda3\Library\usr\bin;C:\Users\dengd\miniconda3\Library\bin;C:\Users\dengd\miniconda3\Scripts;c:\Users\dengd\AppData\Local\Programs\Trae\bin;C:\Users\dengd\AppData\Local\Microsoft\WindowsApps;C:\Users\dengd\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Users\dengd\go\bin;C:\Users\dengd\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Users\dengd\workspace\tools\zig-x86_64-windows-0.16.0-dev.1225+bf9082518;C:\Program Files\jdk-17.0.17\bin;C:\Users\dengd\workspace\tools\apache-maven-3.9.11\bin;C:\Users\dengd\AppData\Local\Programs\Antigravity\bin
+        description: ""
+      - k: PATHEXT
+        v: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+        description: ""
+      - k: PLATFORMCODE
+        v: M7
+        description: ""
+      - k: PROCESSOR_ARCHITECTURE
+        v: AMD64
+        description: ""
+      - k: PROCESSOR_IDENTIFIER
+        v: Intel64 Family 6 Model 198 Stepping 2, GenuineIntel
+        description: ""
+      - k: PROCESSOR_LEVEL
+        v: "6"
+        description: ""
+      - k: PROCESSOR_REVISION
+        v: c602
+        description: ""
+      - k: PROGRAMDATA
+        v: C:\ProgramData
+        description: ""
+      - k: PROGRAMFILES
+        v: C:\Program Files
+        description: ""
+      - k: PROGRAMFILES(X86)
+        v: C:\Program Files (x86)
+        description: ""
+      - k: PROGRAMW6432
+        v: C:\Program Files
+        description: ""
+      - k: PROJECT_CWD
+        v: C:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: PROMPT
+        v: $P$G
+        description: ""
+      - k: PSMODULEPATH
+        v: C:\Users\dengd\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+        description: ""
+      - k: PUBLIC
+        v: C:\Users\Public
+        description: ""
+      - k: REGIONCODE
+        v: APJ
+        description: ""
+      - k: SESSIONNAME
+        v: Console
+        description: ""
+      - k: SSL_CERT_FILE
+        v: C:\Users\dengd\miniconda3\Library\ssl\cacert.pem
+        description: ""
+      - k: SYSTEMDRIVE
+        v: 'C:'
+        description: ""
+      - k: SYSTEMROOT
+        v: C:\windows
+        description: ""
+      - k: TEMP
+        v: C:\Users\dengd\AppData\Local\Temp
+        description: ""
+      - k: TERM_PROGRAM
+        v: vscode
+        description: ""
+      - k: TERM_PROGRAM_VERSION
+        v: 1.104.0
+        description: ""
+      - k: TMP
+        v: C:\Users\dengd\AppData\Local\Temp
+        description: ""
+      - k: USERDOMAIN
+        v: PC-OMEN-11
+        description: ""
+      - k: USERDOMAIN_ROAMINGPROFILE
+        v: PC-OMEN-11
+        description: ""
+      - k: USERNAME
+        v: dengd
+        description: ""
+      - k: USERPROFILE
+        v: C:\Users\dengd
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_EXTRA_ARGS
+        v: ""
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_MAIN
+        v: c:\Users\dengd\AppData\Local\Programs\Antigravity\resources\app\extensions\git\dist\askpass-main.js
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_NODE
+        v: C:\Users\dengd\AppData\Local\Programs\Antigravity\Antigravity.exe
+        description: ""
+      - k: VSCODE_GIT_IPC_HANDLE
+        v: \\.\pipe\vscode-git-d25f6d0f5f-sock
+        description: ""
+      - k: VSCODE_INJECTION
+        v: "1"
+        description: ""
+      - k: VSCODE_PYTHON_AUTOACTIVATE_GUARD
+        v: "1"
+        description: ""
+      - k: WINDIR
+        v: C:\windows
+        description: ""
+      - k: XDG_CURRENT_DESKTOP
+        v: undefined
+        description: ""
+      - k: ZES_ENABLE_SYSMAN
+        v: "1"
+        description: ""
+      - k: _CONDA_EXE
+        v: C:\Users\dengd\miniconda3\Scripts\conda.exe
+        description: ""
+      - k: _CONDA_ROOT
+        v: C:\Users\dengd\miniconda3
+        description: ""
+      - k: __CONDA_OPENSLL_CERT_FILE_SET
+        v: "1"
+        description: ""
+  - id: 7492ade0-55e3-4e5d-8055-4906a82eacc6
+    name: Imported Env Vars 1
+    created_at: 1763716786960
+    updated_at: 1763954507666
+    envVars:
+      - k: SHELL
+        v: /bin/bash
+        description: "111"
+      - k: PWD
+        v: /root
+        description: ""
+      - k: LOGNAME
+        v: root
+        description: ""
+      - k: XDG_SESSION_TYPE
+        v: tty
+        description: ""
+      - k: MOTD_SHOWN
+        v: pam
+        description: ""
+      - k: HOME
+        v: /root
+        description: ""
+      - k: LANG
+        v: en_US.UTF-8
+        description: ""
+      - k: SSH_CONNECTION
+        v: 192.168.121.140 8115 10.10.31.187 22
+        description: ""
+      - k: XDG_SESSION_CLASS
+        v: user
+        description: ""
+      - k: USER
+        v: root
+        description: ""
+      - k: SHLVL
+        v: "0"
+        description: ""
+      - k: XDG_SESSION_ID
+        v: "4003"
+        description: ""
+      - k: XDG_RUNTIME_DIR
+        v: /run/user/0
+        description: ""
+      - k: SSH_CLIENT
+        v: 192.168.121.140 8115 22
+        description: ""
+      - k: PATH
+        v: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+        description: ""
+      - k: DBUS_SESSION_BUS_ADDRESS
+        v: unix:path=/run/user/0/bus
+        description: ""
+      - k: _
+        v: /usr/bin/printenv
+        description: ""
+  - id: 5b86a61c-a420-4b3a-bdb5-82fb237d3c41
+    name: Imported Env Vars 3
+    created_at: 1764055051385
+    updated_at: 1764055051385
+    envVars:
+      - k: AHA_CHROME_CRASHPAD_PIPE_NAME
+        v: \\.\pipe\crashpad_28568_LQEUDNNLZUHKJPMD
+        description: ""
+      - k: AI_AGENT
+        v: TRAE
+        description: ""
+      - k: ALLUSERSPROFILE
+        v: C:\ProgramData
+        description: ""
+      - k: APPDATA
+        v: C:\Users\dengd\AppData\Roaming
+        description: ""
+      - k: BERRY_BIN_FOLDER
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-8bb6a8a4
+        description: ""
+      - k: CLASSPATH
+        v: .;C:\Program Files\jdk-17.0.17\lib\dt.jar;C:\Program Files\jdk-17.0.17\lib\tools.jar
+        description: ""
+      - k: COLORTERM
+        v: truecolor
+        description: ""
+      - k: COMMONPROGRAMFILES
+        v: C:\Program Files\Common Files
+        description: ""
+      - k: COMMONPROGRAMFILES(X86)
+        v: C:\Program Files (x86)\Common Files
+        description: ""
+      - k: COMMONPROGRAMW6432
+        v: C:\Program Files\Common Files
+        description: ""
+      - k: COMPUTERNAME
+        v: PC-OMEN-11
+        description: ""
+      - k: COMSPEC
+        v: C:\windows\system32\cmd.exe
+        description: ""
+      - k: CONDA_DEFAULT_ENV
+        v: base
+        description: ""
+      - k: CONDA_EXE
+        v: C:\Users\dengd\miniconda3\Scripts\conda.exe
+        description: ""
+      - k: CONDA_PREFIX
+        v: C:\Users\dengd\miniconda3
+        description: ""
+      - k: CONDA_PROMPT_MODIFIER
+        v: (base)
+        description: ""
+      - k: CONDA_PYTHON_EXE
+        v: C:\Users\dengd\miniconda3\python.exe
+        description: ""
+      - k: CONDA_SHLVL
+        v: "1"
+        description: ""
+      - k: COREPACK_ENABLE_DOWNLOAD_PROMPT
+        v: "1"
+        description: ""
+      - k: COREPACK_ROOT
+        v: C:\Users\dengd\AppData\Local\nvm\v24.11.0\node_modules\corepack
+        description: ""
+      - k: DRIVERDATA
+        v: C:\Windows\System32\Drivers\DriverData
+        description: ""
+      - k: EFC_31072_1262719628
+        v: "1"
+        description: ""
+      - k: EFC_31072_1592913036
+        v: "1"
+        description: ""
+      - k: EFC_31072_2283032206
+        v: "1"
+        description: ""
+      - k: EFC_31072_2775293581
+        v: "1"
+        description: ""
+      - k: EFC_31072_3789132940
+        v: "1"
+        description: ""
+      - k: ELECTRON_CLI_ARGS
+        v: '[]'
+        description: ""
+      - k: ELECTRON_EXEC_PATH
+        v: C:\Users\dengd\workspace\sourcecode\termia\node_modules\electron\dist\electron.exe
+        description: ""
+      - k: ELECTRON_MAJOR_VER
+        v: "37"
+        description: ""
+      - k: ELECTRON_RENDERER_URL
+        v: http://localhost:5173
+        description: ""
+      - k: GIT_ASKPASS
+        v: c:\Users\dengd\AppData\Local\Programs\Trae\resources\app\extensions\git\dist\askpass.sh
+        description: ""
+      - k: GOPATH
+        v: C:\Users\dengd\go
+        description: ""
+      - k: HOMEDRIVE
+        v: 'C:'
+        description: ""
+      - k: HOMEPATH
+        v: \Users\dengd
+        description: ""
+      - k: INIT_CWD
+        v: C:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: ISARCHMATCHED
+        v: "1"
+        description: ""
+      - k: JAVA_HOME
+        v: C:\Program Files\jdk-17.0.17
+        description: ""
+      - k: LANG
+        v: zh_CN.UTF-8
+        description: ""
+      - k: LOCALAPPDATA
+        v: C:\Users\dengd\AppData\Local
+        description: ""
+      - k: LOGONSERVER
+        v: \\PC-OMEN-11
+        description: ""
+      - k: MAVEN_HOME
+        v: C:\Users\dengd\workspace\tools\apache-maven-3.9.11
+        description: ""
+      - k: MINIO_ROOT_PASSWORD
+        v: minioadmin123
+        description: ""
+      - k: MINIO_ROOT_USER
+        v: minioadmin
+        description: ""
+      - k: NODE_ENV
+        v: development
+        description: ""
+      - k: NODE_ENV_ELECTRON_VITE
+        v: development
+        description: ""
+      - k: npm_config_user_agent
+        v: yarn/4.6.0 npm/? node/v24.11.0 win32 x64
+        description: ""
+      - k: npm_execpath
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-8bb6a8a4\yarn
+        description: ""
+      - k: npm_lifecycle_event
+        v: dev
+        description: ""
+      - k: npm_node_execpath
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-8bb6a8a4\node
+        description: ""
+      - k: npm_package_json
+        v: C:\Users\dengd\workspace\sourcecode\termia\package.json
+        description: ""
+      - k: npm_package_name
+        v: waveterm
+        description: ""
+      - k: npm_package_version
+        v: 0.11.6-beta.1
+        description: ""
+      - k: NUMBER_OF_PROCESSORS
+        v: "20"
+        description: ""
+      - k: NVIDIAWHITELISTED
+        v: "0x01"
+        description: ""
+      - k: NVM_HOME
+        v: C:\Users\dengd\AppData\Local\nvm
+        description: ""
+      - k: NVM_SYMLINK
+        v: C:\nvm4w\nodejs
+        description: ""
+      - k: ONEDRIVE
+        v: C:\Users\dengd\OneDrive
+        description: ""
+      - k: ONLINESERVICES
+        v: Online Services
+        description: ""
+      - k: ORIGINAL_XDG_CURRENT_DESKTOP
+        v: undefined
+        description: ""
+      - k: OS
+        v: Windows_NT
+        description: ""
+      - k: PATH
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-8bb6a8a4;c:\\Users\\dengd\\.trae\\sdks\\workspaces\\882ecc6d\\versions\\node\\current;c:\\Users\\dengd\\.trae\\sdks\\versions\\node\\current;C:\Users\dengd\miniconda3;C:\Users\dengd\miniconda3\Library\mingw-w64\bin;C:\Users\dengd\miniconda3\Library\usr\bin;C:\Users\dengd\miniconda3\Library\bin;C:\Users\dengd\miniconda3\Scripts;C:\Users\dengd\miniconda3\bin;C:\Users\dengd\miniconda3\condabin;c:\Users\dengd\.trae\sdks\workspaces\882ecc6d\versions\node\current;c:\Users\dengd\.trae\sdks\versions\node\current;.;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\Users\dengd\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Program Files\Go\bin;C:\Program Files\Git\cmd;C:\Users\dengd\workspace\tools\zig-x86_64-windows-0.16.0-dev.1225+bf9082518;C:\Program Files\dotnet;C:\Program Files\cursor\resources\app\bin;C:\Users\dengd\miniconda3;C:\Users\dengd\miniconda3\Library\mingw-w64\bin;C:\Users\dengd\miniconda3\Library\usr\bin;C:\Users\dengd\miniconda3\Library\bin;C:\Users\dengd\miniconda3\Scripts;c:\Users\dengd\AppData\Local\Programs\Trae\bin;C:\Users\dengd\AppData\Local\Microsoft\WindowsApps;C:\Users\dengd\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Users\dengd\go\bin;C:\Users\dengd\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Users\dengd\workspace\tools\zig-x86_64-windows-0.16.0-dev.1225+bf9082518;C:\Program Files\jdk-17.0.17\bin;C:\Users\dengd\workspace\tools\apache-maven-3.9.11\bin;C:\Users\dengd\AppData\Local\Programs\Antigravity\bin;C:\Users\dengd\workspace\tools\minio;.
+        description: ""
+      - k: PATHEXT
+        v: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+        description: ""
+      - k: PLATFORMCODE
+        v: M7
+        description: ""
+      - k: PROCESSOR_ARCHITECTURE
+        v: AMD64
+        description: ""
+      - k: PROCESSOR_IDENTIFIER
+        v: Intel64 Family 6 Model 198 Stepping 2, GenuineIntel
+        description: ""
+      - k: PROCESSOR_LEVEL
+        v: "6"
+        description: ""
+      - k: PROCESSOR_REVISION
+        v: c602
+        description: ""
+      - k: PROGRAMDATA
+        v: C:\ProgramData
+        description: ""
+      - k: PROGRAMFILES
+        v: C:\Program Files
+        description: ""
+      - k: PROGRAMFILES(X86)
+        v: C:\Program Files (x86)
+        description: ""
+      - k: PROGRAMW6432
+        v: C:\Program Files
+        description: ""
+      - k: PROJECT_CWD
+        v: C:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: PROMPT
+        v: $P$G
+        description: ""
+      - k: PSMODULEPATH
+        v: C:\Users\dengd\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+        description: ""
+      - k: PUBLIC
+        v: C:\Users\Public
+        description: ""
+      - k: REGIONCODE
+        v: APJ
+        description: ""
+      - k: SAFE_RM_ALLOWED_PATH
+        v: c:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: SAFE_RM_AUTO_ADD_TEMP
+        v: "1"
+        description: ""
+      - k: SAFE_RM_DENIED_PATH
+        v: c:\Users\dengd\workspace\sourcecode\termia\.vscode;c:\Users\dengd\workspace\sourcecode\termia\.trae;c:\Users\dengd\workspace\sourcecode\termia\.git
+        description: ""
+      - k: SAFE_RM_PROTECTION_FLAG
+        v: c:\Users\dengd\AppData\Local\Temp\safe-rm-protection-flag-e53e9840-a6d4-41ce-8b46-45e71e9483e9
+        description: ""
+      - k: SAFE_RM_SOURCE_FLAG
+        v: c:\Users\dengd\AppData\Local\Temp\safe-rm-source-flag-d1f834f3-8241-4a5c-98b0-ac84ab16718f
+        description: ""
+      - k: SESSIONNAME
+        v: Console
+        description: ""
+      - k: SHIM_MCCOMPAT
+        v: "0x810000001"
+        description: ""
+      - k: SSL_CERT_FILE
+        v: C:\Users\dengd\miniconda3\Library\ssl\cacert.pem
+        description: ""
+      - k: SYSTEMDRIVE
+        v: 'C:'
+        description: ""
+      - k: SYSTEMROOT
+        v: C:\windows
+        description: ""
+      - k: TEMP
+        v: C:\Users\dengd\AppData\Local\Temp
+        description: ""
+      - k: TERM_PRODUCT
+        v: Trae
+        description: ""
+      - k: TERM_PROGRAM
+        v: vscode
+        description: ""
+      - k: TERM_PROGRAM_VERSION
+        v: 1.104.3
+        description: ""
+      - k: TMP
+        v: C:\Users\dengd\AppData\Local\Temp
+        description: ""
+      - k: TRAE_AI_SHELL_ID
+        v: "3"
+        description: ""
+      - k: USERDOMAIN
+        v: PC-OMEN-11
+        description: ""
+      - k: USERDOMAIN_ROAMINGPROFILE
+        v: PC-OMEN-11
+        description: ""
+      - k: USERNAME
+        v: dengd
+        description: ""
+      - k: USERPROFILE
+        v: C:\Users\dengd
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_EXTRA_ARGS
+        v: ""
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_MAIN
+        v: c:\Users\dengd\AppData\Local\Programs\Trae\resources\app\extensions\git\dist\askpass-main.js
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_NODE
+        v: C:\Users\dengd\AppData\Local\Programs\Trae\Trae.exe
+        description: ""
+      - k: VSCODE_GIT_IPC_HANDLE
+        v: \\.\pipe\vscode-git-093fd7f084-sock
+        description: ""
+      - k: VSCODE_INJECTION
+        v: "1"
+        description: ""
+      - k: VSCODE_PYTHON_AUTOACTIVATE_GUARD
+        v: "1"
+        description: ""
+      - k: WINDIR
+        v: C:\windows
+        description: ""
+      - k: XDG_CURRENT_DESKTOP
+        v: undefined
+        description: ""
+      - k: ZES_ENABLE_SYSMAN
+        v: "1"
+        description: ""
+      - k: _CONDA_EXE
+        v: C:\Users\dengd\miniconda3\Scripts\conda.exe
+        description: ""
+      - k: _CONDA_ROOT
+        v: C:\Users\dengd\miniconda3
+        description: ""
+      - k: __CONDA_OPENSLL_CERT_FILE_SET
+        v: "1"
+        description: ""
+  - id: d5e96431-1dfe-4877-886a-71999158d267
+    name: New Folder
+    description: '@@__env__@@'
+    created_at: 1764229880196
+    updated_at: 1764229880196
+    items:
+      - id: 749b4a73-4f89-4307-b335-296d603322b3
+        name: New Folder
+        description: '@@__env__@@'
+        created_at: 1764229933836
+        updated_at: 1764229933836
+  - id: 8f716314-eaf7-401b-9d26-a7afc040a9e4
+    name: Imported Env Vars 2
+    created_at: 1764229887472
+    updated_at: 1764229887472
+    envVars:
+      - k: AHA_CHROME_CRASHPAD_PIPE_NAME
+        v: \\.\pipe\crashpad_30696_QFFDBFKZXXBQUTCY
+        description: ""
+      - k: ALLUSERSPROFILE
+        v: C:\ProgramData
+        description: ""
+      - k: APPDATA
+        v: C:\Users\dengd\AppData\Roaming
+        description: ""
+      - k: BERRY_BIN_FOLDER
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-a265a010
+        description: ""
+      - k: CLASSPATH
+        v: .;C:\Program Files\jdk-17.0.17\lib\dt.jar;C:\Program Files\jdk-17.0.17\lib\tools.jar
+        description: ""
+      - k: COLORTERM
+        v: truecolor
+        description: ""
+      - k: COMMONPROGRAMFILES
+        v: C:\Program Files\Common Files
+        description: ""
+      - k: COMMONPROGRAMFILES(X86)
+        v: C:\Program Files (x86)\Common Files
+        description: ""
+      - k: COMMONPROGRAMW6432
+        v: C:\Program Files\Common Files
+        description: ""
+      - k: COMPUTERNAME
+        v: PC-OMEN-11
+        description: ""
+      - k: COMSPEC
+        v: C:\windows\system32\cmd.exe
+        description: ""
+      - k: CONDA_DEFAULT_ENV
+        v: base
+        description: ""
+      - k: CONDA_EXE
+        v: C:\Users\dengd\miniconda3\Scripts\conda.exe
+        description: ""
+      - k: CONDA_PREFIX
+        v: C:\Users\dengd\miniconda3
+        description: ""
+      - k: CONDA_PROMPT_MODIFIER
+        v: (base)
+        description: ""
+      - k: CONDA_PYTHON_EXE
+        v: C:\Users\dengd\miniconda3\python.exe
+        description: ""
+      - k: CONDA_SHLVL
+        v: "1"
+        description: ""
+      - k: COREPACK_ENABLE_DOWNLOAD_PROMPT
+        v: "1"
+        description: ""
+      - k: COREPACK_ROOT
+        v: C:\Users\dengd\AppData\Local\nvm\v24.11.0\node_modules\corepack
+        description: ""
+      - k: DRIVERDATA
+        v: C:\Windows\System32\Drivers\DriverData
+        description: ""
+      - k: EFC_11624_1262719628
+        v: "1"
+        description: ""
+      - k: EFC_11624_1592913036
+        v: "1"
+        description: ""
+      - k: EFC_11624_2283032206
+        v: "1"
+        description: ""
+      - k: EFC_11624_2775293581
+        v: "1"
+        description: ""
+      - k: EFC_11624_3789132940
+        v: "1"
+        description: ""
+      - k: ELECTRON_CLI_ARGS
+        v: '[]'
+        description: ""
+      - k: ELECTRON_EXEC_PATH
+        v: C:\Users\dengd\workspace\sourcecode\termia\node_modules\electron\dist\electron.exe
+        description: ""
+      - k: ELECTRON_MAJOR_VER
+        v: "37"
+        description: ""
+      - k: ELECTRON_RENDERER_URL
+        v: http://localhost:5173
+        description: ""
+      - k: FPS_BROWSER_APP_PROFILE_STRING
+        v: Internet Explorer
+        description: ""
+      - k: FPS_BROWSER_USER_PROFILE_STRING
+        v: Default
+        description: ""
+      - k: GIT_ASKPASS
+        v: c:\Users\dengd\AppData\Local\Programs\Trae\resources\app\extensions\git\dist\askpass.sh
+        description: ""
+      - k: GOPATH
+        v: C:\Users\dengd\go
+        description: ""
+      - k: HOMEDRIVE
+        v: 'C:'
+        description: ""
+      - k: HOMEPATH
+        v: \Users\dengd
+        description: ""
+      - k: INIT_CWD
+        v: C:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: ISARCHMATCHED
+        v: "1"
+        description: ""
+      - k: JAVA_HOME
+        v: C:\Program Files\jdk-17.0.17
+        description: ""
+      - k: LANG
+        v: zh_CN.UTF-8
+        description: ""
+      - k: LOCALAPPDATA
+        v: C:\Users\dengd\AppData\Local
+        description: ""
+      - k: LOGONSERVER
+        v: \\PC-OMEN-11
+        description: ""
+      - k: MAVEN_HOME
+        v: C:\Users\dengd\workspace\tools\apache-maven-3.9.11
+        description: ""
+      - k: MINIO_ROOT_PASSWORD
+        v: minioadmin123
+        description: ""
+      - k: MINIO_ROOT_USER
+        v: minioadmin
+        description: ""
+      - k: NODE_ENV
+        v: development
+        description: ""
+      - k: NODE_ENV_ELECTRON_VITE
+        v: development
+        description: ""
+      - k: NPM_CONFIG_PYTHON
+        v: C:\\Users\\dengd\\miniconda3\\python.exe
+        description: ""
+      - k: npm_config_user_agent
+        v: yarn/4.6.0 npm/? node/v24.11.0 win32 x64
+        description: ""
+      - k: npm_execpath
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-a265a010\yarn
+        description: ""
+      - k: npm_lifecycle_event
+        v: dev
+        description: ""
+      - k: npm_node_execpath
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-a265a010\node
+        description: ""
+      - k: npm_package_json
+        v: C:\Users\dengd\workspace\sourcecode\termia\package.json
+        description: ""
+      - k: npm_package_name
+        v: waveterm
+        description: ""
+      - k: npm_package_version
+        v: 0.11.6-beta.1
+        description: ""
+      - k: NUMBER_OF_PROCESSORS
+        v: "20"
+        description: ""
+      - k: NVIDIAWHITELISTED
+        v: "0x01"
+        description: ""
+      - k: NVM_HOME
+        v: C:\Users\dengd\AppData\Local\nvm
+        description: ""
+      - k: NVM_SYMLINK
+        v: C:\nvm4w\nodejs
+        description: ""
+      - k: ONEDRIVE
+        v: C:\Users\dengd\OneDrive
+        description: ""
+      - k: ONLINESERVICES
+        v: Online Services
+        description: ""
+      - k: ORIGINAL_XDG_CURRENT_DESKTOP
+        v: undefined
+        description: ""
+      - k: OS
+        v: Windows_NT
+        description: ""
+      - k: PATH
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-a265a010;C:\Users\dengd\miniconda3;C:\Users\dengd\miniconda3\Library\mingw-w64\bin;C:\Users\dengd\miniconda3\Library\usr\bin;C:\Users\dengd\miniconda3\Library\bin;C:\Users\dengd\miniconda3\Scripts;C:\Users\dengd\miniconda3\bin;C:\Users\dengd\miniconda3\condabin;.;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\Users\dengd\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Program Files\Go\bin;C:\Program Files\Git\cmd;C:\Users\dengd\workspace\tools\zig-x86_64-windows-0.16.0-dev.1225+bf9082518;C:\Program Files\dotnet;C:\Program Files\cursor\resources\app\bin;C:\Users\dengd\miniconda3;C:\Users\dengd\miniconda3\Library\mingw-w64\bin;C:\Users\dengd\miniconda3\Library\usr\bin;C:\Users\dengd\miniconda3\Library\bin;C:\Users\dengd\miniconda3\Scripts;c:\Users\dengd\AppData\Local\Programs\Trae\bin;C:\Users\dengd\AppData\Local\Microsoft\WindowsApps;C:\Users\dengd\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Users\dengd\go\bin;C:\Users\dengd\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Users\dengd\workspace\tools\zig-x86_64-windows-0.16.0-dev.1225+bf9082518;C:\Program Files\jdk-17.0.17\bin;C:\Users\dengd\workspace\tools\apache-maven-3.9.11\bin;C:\Users\dengd\AppData\Local\Programs\Antigravity\bin;C:\Users\dengd\workspace\tools\minio;.
+        description: ""
+      - k: PATHEXT
+        v: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+        description: ""
+      - k: PLATFORMCODE
+        v: M7
+        description: ""
+      - k: PROCESSOR_ARCHITECTURE
+        v: AMD64
+        description: ""
+      - k: PROCESSOR_IDENTIFIER
+        v: Intel64 Family 6 Model 198 Stepping 2, GenuineIntel
+        description: ""
+      - k: PROCESSOR_LEVEL
+        v: "6"
+        description: ""
+      - k: PROCESSOR_REVISION
+        v: c602
+        description: ""
+      - k: PROGRAMDATA
+        v: C:\ProgramData
+        description: ""
+      - k: PROGRAMFILES
+        v: C:\Program Files
+        description: ""
+      - k: PROGRAMFILES(X86)
+        v: C:\Program Files (x86)
+        description: ""
+      - k: PROGRAMW6432
+        v: C:\Program Files
+        description: ""
+      - k: PROJECT_CWD
+        v: C:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: PROMPT
+        v: $P$G
+        description: ""
+      - k: PSMODULEPATH
+        v: C:\Users\dengd\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+        description: ""
+      - k: PUBLIC
+        v: C:\Users\Public
+        description: ""
+      - k: REGIONCODE
+        v: APJ
+        description: ""
+      - k: SASS_BINARY_SITE
+        v: https://github.com/sass/node-sass/releases/download/
+        description: ""
+      - k: SESSIONNAME
+        v: Console
+        description: ""
+      - k: SHARP_BINARY_HOST
+        v: https://npmmirror.com/mirrors/sharp
+        description: ""
+      - k: SHARP_LIBVIPS_BINARY_HOST
+        v: https://npmmirror.com/mirrors/sharp-libvips
+        description: ""
+      - k: SHIM_MCCOMPAT
+        v: "0x810000001"
+        description: ""
+      - k: SSL_CERT_FILE
+        v: C:\Users\dengd\miniconda3\Library\ssl\cacert.pem
+        description: ""
+      - k: SYSTEMDRIVE
+        v: 'C:'
+        description: ""
+      - k: SYSTEMROOT
+        v: C:\windows
+        description: ""
+      - k: TEMP
+        v: C:\Users\dengd\AppData\Local\Temp
+        description: ""
+      - k: TERM_PRODUCT
+        v: Trae
+        description: ""
+      - k: TERM_PROGRAM
+        v: vscode
+        description: ""
+      - k: TERM_PROGRAM_VERSION
+        v: 1.104.3
+        description: ""
+      - k: TMP
+        v: C:\Users\dengd\AppData\Local\Temp
+        description: ""
+      - k: USERDOMAIN
+        v: PC-OMEN-11
+        description: ""
+      - k: USERDOMAIN_ROAMINGPROFILE
+        v: PC-OMEN-11
+        description: ""
+      - k: USERNAME
+        v: dengd
+        description: ""
+      - k: USERPROFILE
+        v: C:\Users\dengd
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_EXTRA_ARGS
+        v: ""
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_MAIN
+        v: c:\Users\dengd\AppData\Local\Programs\Trae\resources\app\extensions\git\dist\askpass-main.js
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_NODE
+        v: C:\Users\dengd\AppData\Local\Programs\Trae\Trae.exe
+        description: ""
+      - k: VSCODE_GIT_IPC_HANDLE
+        v: \\.\pipe\vscode-git-093fd7f084-sock
+        description: ""
+      - k: VSCODE_INJECTION
+        v: "1"
+        description: ""
+      - k: VSCODE_PYTHON_AUTOACTIVATE_GUARD
+        v: "1"
+        description: ""
+      - k: WINDIR
+        v: C:\windows
+        description: ""
+      - k: XDG_CURRENT_DESKTOP
+        v: undefined
+        description: ""
+      - k: ZES_ENABLE_SYSMAN
+        v: "1"
+        description: ""
+      - k: _CONDA_EXE
+        v: C:\Users\dengd\miniconda3\Scripts\conda.exe
+        description: ""
+      - k: _CONDA_ROOT
+        v: C:\Users\dengd\miniconda3
+        description: ""
+      - k: __CONDA_OPENSLL_CERT_FILE_SET
+        v: "1"
+        description: ""
+  - id: b9316cb7-64a0-48ac-a6c1-94e9360f3f71
+    name: Imported Env Vars 4
+    created_at: 1764229897263
+    updated_at: 1764229897263
+    envVars:
+      - k: AHA_CHROME_CRASHPAD_PIPE_NAME
+        v: \\.\pipe\crashpad_30696_QFFDBFKZXXBQUTCY
+        description: ""
+      - k: ALLUSERSPROFILE
+        v: C:\ProgramData
+        description: ""
+      - k: APPDATA
+        v: C:\Users\dengd\AppData\Roaming
+        description: ""
+      - k: BERRY_BIN_FOLDER
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-a265a010
+        description: ""
+      - k: CLASSPATH
+        v: .;C:\Program Files\jdk-17.0.17\lib\dt.jar;C:\Program Files\jdk-17.0.17\lib\tools.jar
+        description: ""
+      - k: COLORTERM
+        v: truecolor
+        description: ""
+      - k: COMMONPROGRAMFILES
+        v: C:\Program Files\Common Files
+        description: ""
+      - k: COMMONPROGRAMFILES(X86)
+        v: C:\Program Files (x86)\Common Files
+        description: ""
+      - k: COMMONPROGRAMW6432
+        v: C:\Program Files\Common Files
+        description: ""
+      - k: COMPUTERNAME
+        v: PC-OMEN-11
+        description: ""
+      - k: COMSPEC
+        v: C:\windows\system32\cmd.exe
+        description: ""
+      - k: CONDA_DEFAULT_ENV
+        v: base
+        description: ""
+      - k: CONDA_EXE
+        v: C:\Users\dengd\miniconda3\Scripts\conda.exe
+        description: ""
+      - k: CONDA_PREFIX
+        v: C:\Users\dengd\miniconda3
+        description: ""
+      - k: CONDA_PROMPT_MODIFIER
+        v: (base)
+        description: ""
+      - k: CONDA_PYTHON_EXE
+        v: C:\Users\dengd\miniconda3\python.exe
+        description: ""
+      - k: CONDA_SHLVL
+        v: "1"
+        description: ""
+      - k: COREPACK_ENABLE_DOWNLOAD_PROMPT
+        v: "1"
+        description: ""
+      - k: COREPACK_ROOT
+        v: C:\Users\dengd\AppData\Local\nvm\v24.11.0\node_modules\corepack
+        description: ""
+      - k: DRIVERDATA
+        v: C:\Windows\System32\Drivers\DriverData
+        description: ""
+      - k: EFC_11624_1262719628
+        v: "1"
+        description: ""
+      - k: EFC_11624_1592913036
+        v: "1"
+        description: ""
+      - k: EFC_11624_2283032206
+        v: "1"
+        description: ""
+      - k: EFC_11624_2775293581
+        v: "1"
+        description: ""
+      - k: EFC_11624_3789132940
+        v: "1"
+        description: ""
+      - k: ELECTRON_CLI_ARGS
+        v: '[]'
+        description: ""
+      - k: ELECTRON_EXEC_PATH
+        v: C:\Users\dengd\workspace\sourcecode\termia\node_modules\electron\dist\electron.exe
+        description: ""
+      - k: ELECTRON_MAJOR_VER
+        v: "37"
+        description: ""
+      - k: ELECTRON_RENDERER_URL
+        v: http://localhost:5173
+        description: ""
+      - k: FPS_BROWSER_APP_PROFILE_STRING
+        v: Internet Explorer
+        description: ""
+      - k: FPS_BROWSER_USER_PROFILE_STRING
+        v: Default
+        description: ""
+      - k: GIT_ASKPASS
+        v: c:\Users\dengd\AppData\Local\Programs\Trae\resources\app\extensions\git\dist\askpass.sh
+        description: ""
+      - k: GOPATH
+        v: C:\Users\dengd\go
+        description: ""
+      - k: HOMEDRIVE
+        v: 'C:'
+        description: ""
+      - k: HOMEPATH
+        v: \Users\dengd
+        description: ""
+      - k: INIT_CWD
+        v: C:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: ISARCHMATCHED
+        v: "1"
+        description: ""
+      - k: JAVA_HOME
+        v: C:\Program Files\jdk-17.0.17
+        description: ""
+      - k: LANG
+        v: zh_CN.UTF-8
+        description: ""
+      - k: LOCALAPPDATA
+        v: C:\Users\dengd\AppData\Local
+        description: ""
+      - k: LOGONSERVER
+        v: \\PC-OMEN-11
+        description: ""
+      - k: MAVEN_HOME
+        v: C:\Users\dengd\workspace\tools\apache-maven-3.9.11
+        description: ""
+      - k: MINIO_ROOT_PASSWORD
+        v: minioadmin123
+        description: ""
+      - k: MINIO_ROOT_USER
+        v: minioadmin
+        description: ""
+      - k: NODE_ENV
+        v: development
+        description: ""
+      - k: NODE_ENV_ELECTRON_VITE
+        v: development
+        description: ""
+      - k: NPM_CONFIG_PYTHON
+        v: C:\\Users\\dengd\\miniconda3\\python.exe
+        description: ""
+      - k: npm_config_user_agent
+        v: yarn/4.6.0 npm/? node/v24.11.0 win32 x64
+        description: ""
+      - k: npm_execpath
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-a265a010\yarn
+        description: ""
+      - k: npm_lifecycle_event
+        v: dev
+        description: ""
+      - k: npm_node_execpath
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-a265a010\node
+        description: ""
+      - k: npm_package_json
+        v: C:\Users\dengd\workspace\sourcecode\termia\package.json
+        description: ""
+      - k: npm_package_name
+        v: waveterm
+        description: ""
+      - k: npm_package_version
+        v: 0.11.6-beta.1
+        description: ""
+      - k: NUMBER_OF_PROCESSORS
+        v: "20"
+        description: ""
+      - k: NVIDIAWHITELISTED
+        v: "0x01"
+        description: ""
+      - k: NVM_HOME
+        v: C:\Users\dengd\AppData\Local\nvm
+        description: ""
+      - k: NVM_SYMLINK
+        v: C:\nvm4w\nodejs
+        description: ""
+      - k: ONEDRIVE
+        v: C:\Users\dengd\OneDrive
+        description: ""
+      - k: ONLINESERVICES
+        v: Online Services
+        description: ""
+      - k: ORIGINAL_XDG_CURRENT_DESKTOP
+        v: undefined
+        description: ""
+      - k: OS
+        v: Windows_NT
+        description: ""
+      - k: PATH
+        v: C:\Users\dengd\AppData\Local\Temp\xfs-a265a010;C:\Users\dengd\miniconda3;C:\Users\dengd\miniconda3\Library\mingw-w64\bin;C:\Users\dengd\miniconda3\Library\usr\bin;C:\Users\dengd\miniconda3\Library\bin;C:\Users\dengd\miniconda3\Scripts;C:\Users\dengd\miniconda3\bin;C:\Users\dengd\miniconda3\condabin;.;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\Users\dengd\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Program Files\Go\bin;C:\Program Files\Git\cmd;C:\Users\dengd\workspace\tools\zig-x86_64-windows-0.16.0-dev.1225+bf9082518;C:\Program Files\dotnet;C:\Program Files\cursor\resources\app\bin;C:\Users\dengd\miniconda3;C:\Users\dengd\miniconda3\Library\mingw-w64\bin;C:\Users\dengd\miniconda3\Library\usr\bin;C:\Users\dengd\miniconda3\Library\bin;C:\Users\dengd\miniconda3\Scripts;c:\Users\dengd\AppData\Local\Programs\Trae\bin;C:\Users\dengd\AppData\Local\Microsoft\WindowsApps;C:\Users\dengd\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Users\dengd\go\bin;C:\Users\dengd\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dengd\workspace\tools\task_windows_amd64;C:\Users\dengd\workspace\tools\zig-x86_64-windows-0.16.0-dev.1225+bf9082518;C:\Program Files\jdk-17.0.17\bin;C:\Users\dengd\workspace\tools\apache-maven-3.9.11\bin;C:\Users\dengd\AppData\Local\Programs\Antigravity\bin;C:\Users\dengd\workspace\tools\minio;.
+        description: ""
+      - k: PATHEXT
+        v: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+        description: ""
+      - k: PLATFORMCODE
+        v: M7
+        description: ""
+      - k: PROCESSOR_ARCHITECTURE
+        v: AMD64
+        description: ""
+      - k: PROCESSOR_IDENTIFIER
+        v: Intel64 Family 6 Model 198 Stepping 2, GenuineIntel
+        description: ""
+      - k: PROCESSOR_LEVEL
+        v: "6"
+        description: ""
+      - k: PROCESSOR_REVISION
+        v: c602
+        description: ""
+      - k: PROGRAMDATA
+        v: C:\ProgramData
+        description: ""
+      - k: PROGRAMFILES
+        v: C:\Program Files
+        description: ""
+      - k: PROGRAMFILES(X86)
+        v: C:\Program Files (x86)
+        description: ""
+      - k: PROGRAMW6432
+        v: C:\Program Files
+        description: ""
+      - k: PROJECT_CWD
+        v: C:\Users\dengd\workspace\sourcecode\termia
+        description: ""
+      - k: PROMPT
+        v: $P$G
+        description: ""
+      - k: PSMODULEPATH
+        v: C:\Users\dengd\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+        description: ""
+      - k: PUBLIC
+        v: C:\Users\Public
+        description: ""
+      - k: REGIONCODE
+        v: APJ
+        description: ""
+      - k: SASS_BINARY_SITE
+        v: https://github.com/sass/node-sass/releases/download/
+        description: ""
+      - k: SESSIONNAME
+        v: Console
+        description: ""
+      - k: SHARP_BINARY_HOST
+        v: https://npmmirror.com/mirrors/sharp
+        description: ""
+      - k: SHARP_LIBVIPS_BINARY_HOST
+        v: https://npmmirror.com/mirrors/sharp-libvips
+        description: ""
+      - k: SHIM_MCCOMPAT
+        v: "0x810000001"
+        description: ""
+      - k: SSL_CERT_FILE
+        v: C:\Users\dengd\miniconda3\Library\ssl\cacert.pem
+        description: ""
+      - k: SYSTEMDRIVE
+        v: 'C:'
+        description: ""
+      - k: SYSTEMROOT
+        v: C:\windows
+        description: ""
+      - k: TEMP
+        v: C:\Users\dengd\AppData\Local\Temp
+        description: ""
+      - k: TERM_PRODUCT
+        v: Trae
+        description: ""
+      - k: TERM_PROGRAM
+        v: vscode
+        description: ""
+      - k: TERM_PROGRAM_VERSION
+        v: 1.104.3
+        description: ""
+      - k: TMP
+        v: C:\Users\dengd\AppData\Local\Temp
+        description: ""
+      - k: USERDOMAIN
+        v: PC-OMEN-11
+        description: ""
+      - k: USERDOMAIN_ROAMINGPROFILE
+        v: PC-OMEN-11
+        description: ""
+      - k: USERNAME
+        v: dengd
+        description: ""
+      - k: USERPROFILE
+        v: C:\Users\dengd
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_EXTRA_ARGS
+        v: ""
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_MAIN
+        v: c:\Users\dengd\AppData\Local\Programs\Trae\resources\app\extensions\git\dist\askpass-main.js
+        description: ""
+      - k: VSCODE_GIT_ASKPASS_NODE
+        v: C:\Users\dengd\AppData\Local\Programs\Trae\Trae.exe
+        description: ""
+      - k: VSCODE_GIT_IPC_HANDLE
+        v: \\.\pipe\vscode-git-093fd7f084-sock
+        description: ""
+      - k: VSCODE_INJECTION
+        v: "1"
+        description: ""
+      - k: VSCODE_PYTHON_AUTOACTIVATE_GUARD
+        v: "1"
+        description: ""
+      - k: WINDIR
+        v: C:\windows
+        description: ""
+      - k: XDG_CURRENT_DESKTOP
+        v: undefined
+        description: ""
+      - k: ZES_ENABLE_SYSMAN
+        v: "1"
+        description: ""
+      - k: _CONDA_EXE
+        v: C:\Users\dengd\miniconda3\Scripts\conda.exe
+        description: ""
+      - k: _CONDA_ROOT
+        v: C:\Users\dengd\miniconda3
+        description: ""
+      - k: __CONDA_OPENSLL_CERT_FILE_SET
+        v: "1"
+        description: ""

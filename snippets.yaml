@@ -1,0 +1,179 @@
+items:
+  - id: 0ef8efdb-5e84-4877-8a45-f46045ebd932
+    name: 标题
+    description: 描述
+    created_at: 1763705188981
+    updated_at: 1763705188981
+    content: "# 内容\r\n\r\n#  内容\r\n\r\n```\r\ncocde\r\nsljfnb\r\n\r\n```"
+  - id: fce6ba38-1658-422b-8d36-355dacc48d71
+    name: 安装 OpenJDK 脚本
+    description: 自动检测常见发行版并安装 OpenJDK（优先安装 Java 11/17），安装完成后输出 java -version。
+    created_at: 1764142717983
+    updated_at: 1764142717983
+    content: |-
+      #!/usr/bin/env bash
+      set -e
+
+      echo "检测并安装 OpenJDK..."
+      SUDO=''
+      if [ "$(id -u)" -ne 0 ]; then
+        if command -v sudo >/dev/null 2>&1; then
+          SUDO='sudo'
+        else
+          echo "需要 root 权限，请以 root 用户运行或安装 sudo。" >&2
+          exit 1
+        fi
+      fi
+
+      install_apt() {
+        $SUDO apt-get update -y
+        # 优先尝试安装 openjdk-17，其次 11
+        if apt-cache show openjdk-17-jdk >/dev/null 2>&1; then
+          $SUDO DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-17-jdk
+        else
+          $SUDO DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-11-jdk
+        fi
+      }
+
+      install_yum() {
+        # CentOS/RHEL
+        if command -v dnf >/dev/null 2>&1; then
+          PKG=java-17-openjdk-devel
+          if ! sudo dnf install -y "$PKG" >/dev/null 2>&1; then
+            PKG=java-11-openjdk-devel
+            $SUDO dnf install -y "$PKG"
+          fi
+        else
+          PKG=java-11-openjdk-devel
+          $SUDO yum install -y "$PKG"
+        fi
+      }
+
+      install_pacman() {
+        $SUDO pacman -Sy --noconfirm jre-openjdk jdk-openjdk || $SUDO pacman -Sy --noconfirm jdk-openjdk
+      }
+
+      install_zypper() {
+        $SUDO zypper refresh
+        $SUDO zypper install -y java-11-openjdk-devel || $SUDO zypper install -y java-1_8_0-openjdk-devel
+      }
+
+      install_apk() {
+        $SUDO apk update
+        # Alpine 常用 openjdk8/11
+        if apk search -q openjdk17 >/dev/null 2>&1; then
+          $SUDO apk add openjdk17
+        else
+          $SUDO apk add openjdk11
+        fi
+      }
+
+      install_brew() {
+        if command -v brew >/dev/null 2>&1; then
+          # Homebrew macOS/Linux
+          if brew info openjdk@17 >/dev/null 2>&1; then
+            brew install openjdk@17
+          else
+            brew install openjdk
+          fi
+          echo "若为 macOS，可能需手动链接： sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk"
+        else
+          echo "未检测到 Homebrew，跳过 macOS brew 安装。"
+          return 1
+        fi
+      }
+
+      # 识别发行版
+      if command -v apt-get >/dev/null 2>&1; then
+        echo "检测到 apt 系统，使用 apt 安装。"
+        install_apt
+      elif command -v dnf >/dev/null 2>&1 || command -v yum >/dev/null 2>&1; then
+        echo "检测到 yum/dnf 系统，使用 yum/dnf 安装。"
+        install_yum
+      elif command -v pacman >/dev/null 2>&1; then
+        echo "检测到 pacman（Arch/Manjaro），使用 pacman 安装。"
+        install_pacman
+      elif command -v zypper >/dev/null 2>&1; then
+        echo "检测到 zypper（openSUSE/SLE），使用 zypper 安装。"
+        install_zypper
+      elif command -v apk >/dev/null 2>&1; then
+        echo "检测到 apk（Alpine），使用 apk 安装。"
+        install_apk
+      elif [ "$(uname)" = "Darwin" ]; then
+        echo "检测到 macOS，尝试使用 Homebrew 安装。"
+        install_brew
+      else
+        echo "无法识别的发行版或不支持的系统，请手动安装 Java。" >&2
+        exit 2
+      fi
+
+      # 校验安装
+      if command -v java >/dev/null 2>&1; then
+        echo "安装完成，Java 版本："
+        java -version
+      else
+        echo "安装完成，但未检测到 java 命令，可能需要手动配置 JAVA_HOME 或 PATH。" >&2
+        exit 3
+      fi
+
+      exit 0
+  - id: 6d481cb6-a3c8-4398-9ce2-6da881c9897b
+    name: New Folder2
+    description: '@@__workflow__@@'
+    created_at: 1764230197908
+    updated_at: 1764230248981
+    items:
+      - id: 5451b68e-ce14-4c44-abd9-1c567b816617
+        name: 系统升级脚本
+        description: 自动检测发行版并使用合适的包管理器更新并升级系统软件包（支持 apt、dnf、yum、pacman、zypper、apk）。
+        created_at: 1764230233498
+        updated_at: 1764230233498
+        content: |-
+          #!/usr/bin/env bash
+          set -euo pipefail
+          if [[ $EUID -ne 0 ]]; then	sudo_exec="sudo"
+          else	sudo_exec=""
+          fi
+          # Detect package manager
+          if command -v apt-get >/dev/null 2>&1; then
+            echo "Detected apt-based system. Updating and upgrading..."
+            $sudo_exec apt-get update -y
+            $sudo_exec apt-get upgrade -y
+            $sudo_exec apt-get dist-upgrade -y || true
+            $sudo_exec apt-get autoremove -y
+            $sudo_exec apt-get autoclean -y
+          elif command -v dnf >/dev/null 2>&1; then
+            echo "Detected dnf-based system. Updating and upgrading..."
+            $sudo_exec dnf upgrade --refresh -y
+            $sudo_exec dnf autoremove -y || true
+          elif command -v yum >/dev/null 2>&1; then
+            echo "Detected yum-based system. Updating and upgrading..."
+            $sudo_exec yum update -y
+            $sudo_exec yum autoremove -y || true
+          elif command -v pacman >/dev/null 2>&1; then
+            echo "Detected Arch/pacman system. Updating and upgrading..."
+            $sudo_exec pacman -Syu --noconfirm
+            $sudo_exec pacman -Qtdq | xargs -r $sudo_exec pacman -Rns --noconfirm || true
+          elif command -v zypper >/dev/null 2>&1; then
+            echo "Detected zypper-based system. Updating and upgrading..."
+            $sudo_exec zypper refresh
+            $sudo_exec zypper update -y
+            $sudo_exec zypper dup -y || true
+          elif command -v apk >/dev/null 2>&1; then
+            echo "Detected Alpine/apk system. Updating and upgrading..."
+            $sudo_exec apk update
+            $sudo_exec apk upgrade
+          else
+            echo "Could not detect a supported package manager. Please run the appropriate upgrade commands for your distribution." >&2
+            exit 2
+          fi
+          # Optional: update snaps and flatpaks if available
+          if command -v snap >/dev/null 2>&1; then
+            echo "Updating snap packages..."
+            $sudo_exec snap refresh || true
+          fi
+          if command -v flatpak >/dev/null 2>&1; then
+            echo "Updating flatpak packages..."
+            flatpak update -y || true
+          fi
+          echo "系统升级完成。建议重启以应用内核或重要组件的更新（如有需要）。"
